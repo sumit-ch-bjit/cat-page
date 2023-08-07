@@ -1,0 +1,141 @@
+.container {
+  font-family: 'Roboto Mono', monospace;
+  display: grid;
+  grid-template: repeat(12, 1fr) / repeat(auto, 2fr);
+  gap: 10px;
+}
+
+.header {
+  background: linear-gradient(#e66465, #9198e5);
+  padding: 30px;
+  margin: auto;
+  text-align: center;
+  width: auto;
+}
+
+.table {
+  background: linear-gradient(45deg, red 0 50%, blue 50% 100%);
+  display: grid;
+  grid-template-columns: 1 / 5;
+
+}
+
+.gallery {
+  background-image: linear-gradient(red 10%, 30%, blue 90%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery table {
+  font-size: large;
+  background: linear-gradient(45deg, red, purple, blue);
+}
+
+.news {
+  background: linear-gradient(30deg, white, black);
+  font-size: large;
+}
+
+.web {
+  margin: 40px;
+  padding: 30px;
+  display: grid;
+}
+
+.animation {
+  transition: 1s transform;
+}
+
+.animation:hover {
+  transform: scale(1) translate(5%, 10%);
+}
+
+.img-animation {
+  transition: 1s transform;
+}
+
+.img-animation:hover {
+  transform: scale(1.5) translate(20%, 10%);
+}
+
+.photo {
+  transition: 1s transform;
+}
+
+.photo:hover {
+  transform: rotate(0.5turn);
+}
+
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+form {
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid hsl(0, 0%, 90%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
